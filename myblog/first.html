@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<style type="text/css">
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.1);
+		}
+		
+		.warp {
+			width: 1000px;
+			height: 320px;
+			overflow: hidden;
+			/*加边框*/
+			box-shadow: 5px, -4px, 100px #000;
+		}
+		
+		.photo {
+			border-left: 1px solid #fff;
+			transition: width 1s;
+			position: relative;
+			width: 180px;
+			height: 320px;
+			float: left;
+		}
+		
+		.warp:hover div {
+			width: 80px;
+		}
+		
+		.warp .photo:hover {
+			width: 640px;
+		}
+		
+		.warp .photo p {
+			background: rgba(0, 0, 0, 0.3);
+			width: 100%;
+			height: 20px;
+			color: rgb(256, 256, 256);
+			overflow: hidden;
+			position: absolute;
+			bottom: -50px;
+			transition: bottom 1s;
+			left: 0;
+		}
+		
+		.warp .photo:hover p {
+			bottom: -30px;
+		}
+	</style>
+
+	<body>
+	<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<a href="index.html" class="image avatar"><img src="images/head_png.jpg" alt="" /></a>
+				<h1><strong>幺~玖</strong><br />
+					</h1> 这是我的博客
+				<br />
+				<a href="article.html" class="button">收藏</a><br/>
+				<a href="Android.html" class="button">简历</a><br/>
+				<a href="first.html" class="button">电影</a><br/>
+				<!--<a href="#" class="button">常用网站</a><br/>-->
+				<a href="https://github.com/OneNigth" class="button">MyGithub</a><br/>
+			</div>
+		</header>
+		<div id="main">
+			<div class="warp">
+				<div class="photo">
+					<img src="images/move_img/img1.jpg" alt="">
+					<p>功夫熊猫</p>
+				</div>
+				<div class="photo">
+					<img src="images/move_img/img2.jpg" alt="">
+					<p>飞屋环游记</p>
+				</div>
+				<div class="photo">
+					<img src="images/move_img/img3.jpg" alt="">
+					<p>汽车总动员</p>
+				</div>
+				<div class="photo">
+					<img src="images/move_img/img4.jpg" alt="">
+					<p>玩具总动员</p>
+				</div>
+			</div>
+		</div>
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li>
+							<a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a>
+						</li>
+						<li>
+							<a href="#" class="icon fa-github"><span class="label">Github</span></a>
+						</li>
+						<li>
+							<a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a>
+						</li>
+						<li>
+							<a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a>
+						</li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>友情连接:
+							<a href="http://www.qypt.com.cn/">清远职业技术学院</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+	</body>
+
+</html>
